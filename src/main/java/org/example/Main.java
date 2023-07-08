@@ -21,6 +21,8 @@ public class Main {
 
         delta = Math.pow(b, 2.0) -4.0 * a * c;
 
+        if(Math.sqrt(delta) > 0){
+
         xUm = (-b + Math.sqrt(delta)) / (2.0 * a);
 
         xDois = (-b - Math.sqrt(delta)) / (2.0 * a);
@@ -28,6 +30,11 @@ public class Main {
         System.out.printf("o Valor de delta = %.2f\n", delta);
         System.out.printf("O valor de x1 = %.2f\n", xUm);
         System.out.printf("O valor de x2 = %.2f\n",xDois);
+        }
+        else{
+            System.out.println("Nao existe valores reais.");
+        }
+
 
         valor.close();
 
